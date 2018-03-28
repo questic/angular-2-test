@@ -1,0 +1,43 @@
+<div style="margin: auto; max-width: 1000px; margin-bottom: 50px;">
+    <data-table id="persons-grid"
+        headerTitle="Employees"
+        [items]="items"
+        [itemCount]="itemCount"
+        (reload)="reloadItems($event)"
+
+        (rowClick)="rowClick($event)"
+        (rowDoubleClick)="rowDoubleClick($event)"
+        [rowTooltip]="rowTooltip"
+        >
+        <data-table-column
+            [property]="'name'"
+            [header]="'Name'"
+            [sortable]="true"
+            [resizable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'username'"
+            [header]="'Username'"
+            [sortable]="true"
+            [resizable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'email'"
+            [header]="'Email'"
+            [sortable]="true"
+            [resizable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'phone'"
+            [header]="'Phone'"
+            [sortable]="true"
+            [resizable]="true">
+        </data-table-column>
+        <data-table-column
+            [property]="'website'"
+            [header]="'Website'"
+            [sortable]="true"
+            [resizable]="true">
+        </data-table-column>
+    </data-table>
+</div>

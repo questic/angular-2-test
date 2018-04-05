@@ -52,6 +52,4 @@ export class DataTableRow implements OnDestroy {
     ngOnDestroy() {
         this.selected = false;
     }
-
-    _this = this; // FIXME is there no template keyword for this in angular 2?
 }

@@ -28,7 +28,4 @@ export class DataTableDemo1Remote {
         console.log('Clicked: ' + rowEvent.row.item.name);
     }
 
-   
-
-    rowTooltip(item) { return item.jobTitle; }
 }

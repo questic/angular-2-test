@@ -30,5 +30,5 @@ export class DataTableDemo1 {
     }
 
 
-    rowTooltip(item) { return item.jobTitle; }
+  }
 }
